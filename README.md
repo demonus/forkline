@@ -1,6 +1,6 @@
 # Forkline
 
-Standalone savings scenario planner by [Gummy Labs](https://gummylabs.app). Plans live in browser `localStorage` and can be downloaded / opened as `.forkline.json` files. No backend.
+Standalone savings scenario planner by [Gummy Labs](https://www.gummylabs.app/). Plans live in browser `localStorage` and can be downloaded / opened as `.forkline.json` files. No backend.
 
 ## Run
 

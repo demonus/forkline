@@ -136,12 +136,12 @@ export function AboutPage() {
         <h2 className="panel-title">By Gummy Labs</h2>
         <p>
           Forkline is a project by{' '}
-          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
+          <a href="https://www.gummylabs.app/" target="_blank" rel="noreferrer">
             Gummy Labs
           </a>
           . Learn more at{' '}
-          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
-            https://gummylabs.app
+          <a href="https://www.gummylabs.app/" target="_blank" rel="noreferrer">
+            https://www.gummylabs.app/
           </a>
           .
         </p>

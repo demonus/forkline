@@ -35,7 +35,7 @@ function AppShell() {
           <div className="app-header-actions">
             <a
               className="app-credit"
-              href="https://gummylabs.app"
+              href="https://www.gummylabs.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ function AppShell() {
       <footer className="app-footer">
         <div className="app-footer-inner">
           <span>Forkline is a project by </span>
-          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
+          <a href="https://www.gummylabs.app/" target="_blank" rel="noreferrer">
             Gummy Labs
           </a>
         </div>

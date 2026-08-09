@@ -133,6 +133,21 @@ export function AboutPage() {
       </section>
 
       <section className="panel doc-section">
+        <h2 className="panel-title">By Gummy Labs</h2>
+        <p>
+          Forkline is a project by{' '}
+          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
+            Gummy Labs
+          </a>
+          . Learn more at{' '}
+          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
+            https://gummylabs.app
+          </a>
+          .
+        </p>
+      </section>
+
+      <section className="panel doc-section">
         <h2 className="panel-title">Open source</h2>
         <p>
           Forkline is open source. You can browse the code, download the project, and contribute on

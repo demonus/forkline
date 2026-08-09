@@ -32,7 +32,16 @@ function AppShell() {
             <NavLink to="/how-to">How to</NavLink>
             <NavLink to="/about">About</NavLink>
           </nav>
-          <div className="app-header-actions" />
+          <div className="app-header-actions">
+            <a
+              className="app-credit"
+              href="https://gummylabs.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              by Gummy Labs
+            </a>
+          </div>
         </div>
       </header>
       <main className="app-main">
@@ -44,6 +53,14 @@ function AppShell() {
           </Routes>
         </div>
       </main>
+      <footer className="app-footer">
+        <div className="app-footer-inner">
+          <span>Forkline is a project by </span>
+          <a href="https://gummylabs.app" target="_blank" rel="noreferrer">
+            Gummy Labs
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }

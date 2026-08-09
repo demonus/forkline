@@ -133,6 +133,18 @@ export function AboutPage() {
       </section>
 
       <section className="panel doc-section">
+        <h2 className="panel-title">Open source</h2>
+        <p>
+          Forkline is open source. You can browse the code, download the project, and contribute on
+          GitHub:{' '}
+          <a href="https://github.com/demonus/forkline" target="_blank" rel="noreferrer">
+            https://github.com/demonus/forkline
+          </a>
+          .
+        </p>
+      </section>
+
+      <section className="panel doc-section">
         <h2 className="panel-title">Next step</h2>
         <p>
           Ready to build a plan? Open the{' '}

@@ -19,9 +19,7 @@ function AppShell() {
       <header className="app-header">
         <div className="app-header-inner">
           <NavLink className="brand-link" to="/">
-            <span className="brand-mark" aria-hidden="true">
-              F
-            </span>
+            <img className="brand-mark" src="/favicon.svg" width={32} height={32} alt="" />
             <span className="brand-text">
               <span className="brand-name">Forkline</span>
               <span className="brand-sub">Savings scenario planner</span>
@@ -34,9 +32,7 @@ function AppShell() {
             <NavLink to="/how-to">How to</NavLink>
             <NavLink to="/about">About</NavLink>
           </nav>
-          <div className="app-header-actions">
-            <span className="muted">Local · no account</span>
-          </div>
+          <div className="app-header-actions" />
         </div>
       </header>
       <main className="app-main">

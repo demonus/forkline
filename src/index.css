@@ -112,6 +112,13 @@ textarea {
   flex-shrink: 0;
 }
 
+img.brand-mark {
+  display: block;
+  padding: 0;
+  background: none;
+  object-fit: contain;
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,222 @@
+/* Stermione design system — shared tokens */
+:root {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Typography hierarchy */
+  --text-page-title: 2.5rem;
+  --text-section: 1.5rem;
+  --text-card-title: 1.125rem;
+  --text-title: var(--text-page-title);
+  --text-heading: var(--text-section);
+  --text-group: var(--text-card-title);
+  --text-body: 0.9375rem;
+  --text-secondary-size: 0.8125rem;
+  --text-caption: 0.75rem;
+  --text-small: 0.75rem;
+  --text-stat: 2rem;
+
+  /* Spacing */
+  --space-section: 2rem;
+  --space-card-gap: 1.25rem;
+  --space-panel: 1.25rem;
+  --space-group: 1rem;
+  --space-control: 0.75rem;
+  --space-element: 0.5rem;
+  --space-tight: 0.25rem;
+  --layout-max-width: 1120px;
+  --layout-padding: 1.75rem;
+
+  /* Shape */
+  --radius-panel: 18px;
+  --radius-control: 14px;
+  --radius-button: 12px;
+  --radius-pill: 999px;
+
+  --transition-fast: 180ms ease;
+  --transition-smooth: 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-bg: #0f1115;
+  --color-bg-section: #181a20;
+  --color-bg-elevated: #181a20;
+  --color-bg-panel: #1a1d24;
+  --color-bg-surface: #22262f;
+  --color-bg-header: rgba(15, 17, 21, 0.82);
+
+  --color-text: #f2f4f8;
+  --color-text-secondary: #b8c0cc;
+  --color-text-muted: #8b95a5;
+  --color-text-placeholder: #6b7280;
+
+  --color-accent: #5b7cfa;
+  --color-accent-hover: #6a88ff;
+  --color-accent-selection: #4d6ef5;
+  --color-accent-subtle: rgba(91, 124, 250, 0.14);
+  --color-accent-glow: rgba(91, 124, 250, 0.22);
+  --color-focus-ring: rgba(91, 124, 250, 0.2);
+
+  --color-nav-active-bg: rgba(91, 124, 250, 0.12);
+  --color-nav-active-text: #e8edff;
+  --color-nav-hover-bg: rgba(255, 255, 255, 0.04);
+
+  --color-positive: #5cb88a;
+  --color-positive-subtle: rgba(92, 184, 138, 0.14);
+  --color-negative: #e07a7a;
+  --color-negative-subtle: rgba(224, 122, 122, 0.14);
+  --color-warning: #d4a843;
+  --color-tag: #8b95a5;
+
+  --cat-food: #5cb88a;
+  --cat-shopping: #7aa8ff;
+  --cat-travel: #f0a060;
+  --cat-entertainment: #b388eb;
+  --cat-health: #e07a7a;
+  --cat-transport: #5ec4d4;
+  --cat-default: #8b95a5;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-border-strong: rgba(255, 255, 255, 0.1);
+  --color-border-button: transparent;
+  --color-surface-hover: rgba(255, 255, 255, 0.05);
+  --color-surface-hover-strong: rgba(255, 255, 255, 0.08);
+  --color-surface-muted: rgba(255, 255, 255, 0.03);
+  --color-surface-inset: rgba(255, 255, 255, 0.02);
+  --color-surface-faint: rgba(255, 255, 255, 0.02);
+  --color-surface-highlight: rgba(255, 255, 255, 0.06);
+  --color-inset-bg: rgba(0, 0, 0, 0.2);
+  --color-on-accent: #ffffff;
+  --color-chart-grid: rgba(255, 255, 255, 0.05);
+  --color-panel-border: transparent;
+  --color-icon: var(--color-text-muted);
+
+  --color-btn-secondary-bg: transparent;
+  --color-btn-secondary-hover: var(--color-surface-muted);
+
+  --color-table-header: rgba(255, 255, 255, 0.02);
+  --color-table-row: transparent;
+  --color-table-row-zebra: rgba(255, 255, 255, 0.02);
+  --color-table-row-hover: rgba(91, 124, 250, 0.08);
+  --color-table-row-selected: rgba(91, 124, 250, 0.14);
+
+  --color-tag-bg: rgba(255, 255, 255, 0.06);
+  --color-tag-text: var(--color-text-secondary);
+  --color-tag-selected-bg: rgba(91, 124, 250, 0.14);
+
+  --color-scrollbar: rgba(255, 255, 255, 0.12);
+  --color-scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.18);
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.24);
+  --shadow-dropdown: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-popover: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-panel: 0 10px 36px rgba(0, 0, 0, 0.4);
+  --shadow-modal: 0 20px 56px rgba(0, 0, 0, 0.5);
+  --shadow-drawer: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-overlay: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+
+  /* Paper layers — cream notebook on oak desk */
+  --color-bg: #ece8e2;
+  --color-bg-section: #f3f1ec;
+  --color-bg-panel: #f8f6f2;
+  --color-bg-elevated: #fbfaf8;
+  --color-bg-surface: #ffffff;
+  --color-bg-header: rgba(236, 232, 226, 0.92);
+
+  /* Typography — printed paper */
+  --color-text: #2f323a;
+  --color-text-secondary: #666c76;
+  --color-text-muted: #9198a3;
+  --color-text-placeholder: #b8bec9;
+
+  /* Ink blue — interaction only */
+  --color-accent: #6e80e8;
+  --color-accent-hover: #7e90f0;
+  --color-accent-selection: #6074dc;
+  --color-accent-subtle: rgba(110, 128, 232, 0.08);
+  --color-accent-glow: rgba(110, 128, 232, 0.14);
+  --color-focus-ring: rgba(110, 128, 232, 0.16);
+
+  --color-nav-active-bg: rgba(110, 128, 232, 0.07);
+  --color-nav-active-text: #2f323a;
+  --color-nav-hover-bg: rgba(120, 110, 95, 0.06);
+
+  /* Watercolor semantics */
+  --color-positive: #82c89b;
+  --color-positive-subtle: rgba(130, 200, 155, 0.14);
+  --color-negative: #e8b0ab;
+  --color-negative-subtle: rgba(240, 172, 165, 0.14);
+  --color-warning: #e8c48a;
+  --color-tag: #666c76;
+
+  /* Painted category pastels */
+  --cat-food: #95d3a2;
+  --cat-shopping: #a3bdf7;
+  --cat-travel: #efc28a;
+  --cat-entertainment: #cdb0f3;
+  --cat-health: #f0aca5;
+  --cat-transport: #98d5d8;
+  --cat-default: #9198a3;
+
+  /* Warm borders */
+  --color-border-subtle: rgba(120, 110, 95, 0.06);
+  --color-border: rgba(120, 110, 95, 0.08);
+  --color-border-strong: rgba(120, 110, 95, 0.1);
+  --color-border-button: transparent;
+  --color-surface-hover: rgba(120, 110, 95, 0.05);
+  --color-surface-hover-strong: rgba(110, 128, 232, 0.06);
+  --color-surface-muted: rgba(120, 110, 95, 0.04);
+  --color-surface-inset: #ebe7e1;
+  --color-surface-faint: #f0ede8;
+  --color-surface-highlight: rgba(120, 110, 95, 0.05);
+  --color-inset-bg: #ebe7e1;
+  --color-on-accent: #ffffff;
+  --color-chart-grid: rgba(120, 110, 95, 0.07);
+  --color-panel-border: transparent;
+  --color-icon: #9198a3;
+
+  --color-btn-secondary-bg: transparent;
+  --color-btn-secondary-hover: rgba(120, 110, 95, 0.05);
+
+  /* Typeset tables */
+  --color-table-header: #ebe7e1;
+  --color-table-row: #f8f6f2;
+  --color-table-row-zebra: #f3f1ec;
+  --color-table-row-hover: #f0f2f6;
+  --color-table-row-selected: rgba(110, 128, 232, 0.09);
+
+  --color-tag-bg: #ebe8e2;
+  --color-tag-text: #666c76;
+  --color-tag-selected-bg: rgba(110, 128, 232, 0.09);
+
+  --color-scrollbar: rgba(120, 110, 95, 0.12);
+  --color-scrollbar-thumb: rgba(120, 110, 95, 0.1);
+  --color-scrollbar-thumb-hover: rgba(120, 110, 95, 0.16);
+
+  /* Sunlight shadows */
+  --shadow-card: 0 2px 8px rgba(70, 60, 45, 0.04), 0 12px 30px rgba(95, 78, 58, 0.05);
+  --shadow-card-hover: 0 4px 14px rgba(70, 60, 45, 0.05), 0 18px 40px rgba(95, 78, 58, 0.06);
+  --shadow-dropdown: 0 4px 16px rgba(70, 60, 45, 0.05), 0 16px 44px rgba(95, 78, 58, 0.06);
+  --shadow-popover: 0 6px 22px rgba(70, 60, 45, 0.06), 0 20px 52px rgba(95, 78, 58, 0.06);
+  --shadow-panel: 0 8px 32px rgba(95, 78, 58, 0.05);
+  --shadow-modal: 0 16px 52px rgba(70, 60, 45, 0.08);
+  --shadow-drawer: 0 12px 40px rgba(95, 78, 58, 0.07);
+  --shadow-overlay: 0 22px 60px rgba(70, 60, 45, 0.09);
+
+  /* Magazine spacing */
+  --space-section: 3.5rem;
+  --space-card-gap: 2rem;
+  --space-panel: 2rem;
+  --space-control: 1rem;
+  --transition-fast: 200ms ease-out;
+  --transition-smooth: 240ms cubic-bezier(0, 0, 0.2, 1);
+}

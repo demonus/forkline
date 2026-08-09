@@ -1,0 +1,61 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { NavLink, Route, Routes } from 'react-router-dom'
+import { AboutPage } from './pages/AboutPage'
+import { HowToPage } from './pages/HowToPage'
+import { PlannerPage } from './pages/PlannerPage'
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+      refetchOnWindowFocus: false,
+    },
+  },
+})
+
+function AppShell() {
+  return (
+    <div className="app-shell">
+      <header className="app-header">
+        <div className="app-header-inner">
+          <NavLink className="brand-link" to="/">
+            <span className="brand-mark" aria-hidden="true">
+              F
+            </span>
+            <span className="brand-text">
+              <span className="brand-name">Forkline</span>
+              <span className="brand-sub">Savings scenario planner</span>
+            </span>
+          </NavLink>
+          <nav className="app-nav" aria-label="Primary">
+            <NavLink to="/" end>
+              Planner
+            </NavLink>
+            <NavLink to="/how-to">How to</NavLink>
+            <NavLink to="/about">About</NavLink>
+          </nav>
+          <div className="app-header-actions">
+            <span className="muted">Local · no account</span>
+          </div>
+        </div>
+      </header>
+      <main className="app-main">
+        <div className="app-main-inner">
+          <Routes>
+            <Route path="/" element={<PlannerPage />} />
+            <Route path="/how-to" element={<HowToPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </div>
+      </main>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AppShell />
+    </QueryClientProvider>
+  )
+}
